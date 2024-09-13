@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt🍶</title>
+    <style>
+    body {
+        background:linear-gradient(white,rgb(86, 188, 239)) ;
+    }
+     h1{
+        text-align: center;
+        
+        padding: 10px;
+     }
+
+        h2 {
+                text-align: center;
+                color: #7548e9;
+                
+        }
+        h3{
+            text-align: right;
+            
+            line-height: 10px ;
+           font-size: 13px;
+           border-radius:4px;
+           color: rgb(140, 44, 137);
+           
+        }
+        h3.outline-text {
+        outline:    1px solid #7d51e8 ;
+        }
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            border-radius: 4px;
+        }
+ .info {
+    line-height: 20px;
+    font-size: 15px;
+    margin:20px 0 10px;
+    text-align: justify;
+    border: 1px solid #7548e9;
+    padding:10px 10px ;
+
+
+ }
+ button {
+    display:block;
+    margin:20px auto ;
+    background-color: #7d51e8;
+    color:aliceblue;
+    font-size: 20px;
+    padding:15px 20px;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0,0, 3);
+    transition: all 200ms ease-in-out;
+ }
+ button:hover{
+    opacity: 0.8;
+    cursor:pointer;
+ }
+ .learn-more {
+      
+      
+      text-decoration: None;
+      color:#5635ab ;
+      display: block;
+      text-align: center;
+      font-size:16px ;
+      margin:0 auto;
+ }
+ .learn-more:hover{
+    text-decoration: underline;
+ }
+ .footer{
+    text-align: center;
+ }
+ .content{
+    max-width: 800px;
+    margin:0 auto;
+    padding:20px 60px;
+    
+ }
+ #highlight{
+     font-weight: bold;
+
+ }
+
+    </style>
+</head>
+<body >
+    <div class="content">
+        <h1> GREEK YOGURT 🤍</h1>
+        <hr>
+        <h2> We Love Yogurt </h2>
+     <h3>[ ESPECIALLY GREEK YOGURT😉]</h3>
+    <img src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/140/875/original/download.jpg?1724573846>
+ >
+ <p class="info"> 👉<span id="highlight">Greek yogurt </span>is a thick, creamy yogurt that can add flavor and texture to foods. Other benefits of Greek yogurt include
+<strong>boosting bone health, building muscle mass, and lowering the risk of certain health conditions.</strong>
+
+Greek yogurt differs from other yogurts because it goes through a straining process to remove the whey. Whey is a liquid
+that contains lactose, a natural sugar found in milk.
+
+Making yogurt involves fermenting milk with live cultures of beneficial bacteria.
+
+Strained Greek yogurt is lower in sugar than regular yogurt. Removing the whey produces a thicker, creamier yogurt with
+a tart taste.
+<br />
+
+</p>
+<a href="https://en.wikipedia.org/?title=Greek_yogurt&redirect=no" target="_blank" class="learn-more">Learn more on wikipedia </a>
+<button class="buy-button"><em>👉Buy Greek Yogurt</em></button>
+<p class="footer">
+This page was built by Kavya
+  </p>
+  </div>
+  <script>
+   function buy()
+   {
+      let name=prompt("What is your name");
+      if (name==""){
+         alert("No name 😒 No yogurt ");
+      }
+      else{
+         let email = prompt("what is you email address");
+         alert("Thankyou " + name + " Welcome! we,ll be in touch through email");
+      }
+      
+   }
+   let buyButton = document.querySelector(".buy-button");
+   buyButton.addEventListener("click",buy);
+  </script>
+</body>
+</html>
